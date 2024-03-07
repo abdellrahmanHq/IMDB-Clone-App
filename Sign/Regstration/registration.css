@@ -1,0 +1,75 @@
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imdb-logo img {
+    position: absolute;
+    top: 20px;
+    width: 110px;
+    height: 60px;
+    display: block;
+    margin-left: 80px;
+}
+
+.registration-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 100px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 10px;
+    background-color: rgb(255, 196, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 4px 5px 3px gray;
+    height: 40px;
+}
+
+.sign-in-link a {
+    text-decoration: none;
+}
+
+.footer {
+    height: 40vh;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.foot-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.foot-content li {
+    display: inline-flex;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.foot-content a {
+    color: rgb(6, 6, 153);
+    text-decoration: none;
+}

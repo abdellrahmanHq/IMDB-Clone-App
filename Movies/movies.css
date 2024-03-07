@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Didact Gothic', sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imdb-logo img {
+    width: 75px;
+    height: 35px;
+}
+
+.nav-menu {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+    min-width: 170px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: white;
+    box-sizing: border-box;
+}
+
+.menu-bar {
+    cursor: pointer;
+}
+
+.logs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    min-width: 260px;
+    font-size: .8rem;
+    color: white;
+}
+
+.logs h3 a {
+    color: white;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+}
+
+.search-box input {
+    width: 100%;
+    height: 30px;
+    padding-left: 20px;
+    border-radius: 6px;
+    min-width: 200px;
+    border: none;
+    font-size: 1rem;
+}
+
+#search-icon {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.imdbpro {
+    cursor: pointer;
+}
+
+#pro {
+    color: aqua;
+}
+
+.hover:hover {
+    background-color: rgb(41, 39, 39);
+    box-sizing: border-box;
+    padding: 8px 2px;
+    border-radius: 5px;
+}
+
+.pop-up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, #242555, #03a5db);
+    padding: 10px;
+    box-shadow: 5px 10px 10px #5a5a5ab0;
+    width: 55%;
+    min-width: 700px;
+    margin: auto;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 10;
+}
+
+.prolink {
+    color: white;
+}
+
+.popup-img {
+    width: 160px;
+    height: 180px;
+}
+
+.popup-img img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.pop-up-desc {
+    color: #fff;
+    font-weight: 400;
+}
+
+.popup-list li {
+    line-height: 25px;
+    list-style: disc;
+    font-size: 1.1rem;
+}
+
+.popup-btn {
+    width: 50%;
+    height: 30px;
+    margin-top: 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+}
+
+.imdbpro:hover+.pop-up {
+    display: flex;
+}
+
+.side-option {
+    color: white;
+    position: absolute;
+    background: #303030;
+    height: 100vh;
+    width: 300px;
+    left: -300px;
+    top: 0;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.side-option .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right;
+    height: 50px;
+    padding: 10px;
+    margin: -1px;
+    background-color: #5c5c5c;
+}
+
+.side-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 17px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width:700px) {
+    #signin {
+        display: none;
+    }
+    .logs {
+        width: 200px;
+        min-width: 200px;
+    }
+    .pop-up {
+        width: 70vh;
+    }
+}
+
+@media screen and (max-width:620px) {
+    #i-logo {
+        display: none;
+    }
+    .logo-menu {
+        min-width: 140px;
+    }
+    .logs {
+        min-width: 100px;
+    }
+    .pop-up {
+        width: 100%;
+        min-width: 600px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #im-pro {
+        display: none;
+    }
+    .pop-up {
+        width: 99%;
+        min-width: 450px;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.movie {
+    box-sizing: border-box;
+    width: 200px;
+    margin: 1rem;
+    border-radius: 3px;
+    background-color: #232330;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    min-height: 50%;
+    border-radius: 10px;
+}
+
+.star {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.star span {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.icon-color {
+    color: yellow;
+}
+
+.movie-info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.7rem;
+    letter-spacing: 0.5px;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.sign-in-button {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(128, 128, 128, 0.336);
+    font-weight: 900;
+    color: rgb(0, 80, 150);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sign-in-button:hover {
+    background-color: black;
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: yellow;
+}
+
+.foot-content {
+    margin-top: 20px;
+}
+
+.foot-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.foot-content li {
+    display: inline-flex;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.foot-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot-content a:hover {
+    color: yellow;
+    text-decoration: underline;
+}

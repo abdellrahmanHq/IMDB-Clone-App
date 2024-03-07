@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/74894dafb2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <section class="main">
+
+
+        <nav class="nav-menu">
+
+            <div class="logo-menu">
+                <div class="imdb-logo" id="i-logo">
+                    <a href="index.html">
+
+                        <img src="/Imges/IMDb.jpg">
+                    </a>
+                </div>
+                <div class="menu-bar" onclick=showMenu()>
+                    <i class="fa-solid fa-bars"></i> <span>Menu</span>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="searchMovie" placeholder="Search IMDb">
+                <div id="search-icon"> <i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+
+            <div class="logs">
+
+                <h1 class="imdbpro" id="im-pro" onclick="aaa()"> IMDb<span id="pro">Pro </span> |</h1>
+
+                <div class="pop-up" id="pop-up2">
+
+                    <div class="popup-img">
+                        <img src="/Imges/imdpro.png" alt="">
+
+                    </div>
+                    <div class="pop-up-desc">
+                        <h2 style="font-size: 20px;">The essential resource for entertainment professionals</h2>
+                        <ul class="popup-list">
+                            <li>Find industry contacts & talent represantation</li>
+                            <li>Acess in development titles not available on IMDb</li>
+                            <li>Get latest news from leading industry trades</li>
+                            <li>Claim your pagr and control brand across IMDb & Amazon</li>
+                        </ul>
+                        <button class="popup-btn">Try IMDbPro Free</button>
+                    </div>
+
+
+                </div>
+
+                <h3 class="hover"><a href="/WatchList/watchlist.html"><i class="fa-solid fa-folder-plus"></i> Watchlist</a></h3>
+                <h3 class="hover" id="signin"><a href="/Sign/sign.html">Sign In</a></h3>
+            </div>
+        </nav>
+
+
+
+        <div class="side-option" id="side">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <br>
+            <br>
+            <ul class="side-list">
+                <li>
+                    <a href="/movies/moveis.html" style="color: white;">
+                        <div> <i class="fa-solid fa-film"></i>&nbsp;<span>Movies</span></div>
+                        <div><i class="fa-solid fa-chevron-down"></i> </a>
+                    </div>
+                </li>
+                <li>
+                    <div> <i class="fa-solid fa-tv"></i>&nbsp;<span>Tv Shows</span></div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </li>
+                <li>
+                    <div><i class="fa-solid fa-video"></i>&nbsp;<span>Watch</span></div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </li>
+                <li>
+                    <div> <i class="fa-solid fa-award"></i>&nbsp;<span>Awards & Events</span></div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </li>
+                <li>
+                    <div><i class="fa-solid fa-person"></i>&nbsp;<span>Celebs</span></div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </li>
+                <li>
+                    <div><i class="fa-solid fa-globe"></i>&nbsp;<span>Community</span></div>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </li>
+                <br>
+                <br>
+                <li>
+
+                    <div>
+                        <h4>IMDbPro</h4>
+
+                        <p style="font-size: 15px;">Get the essential resource for entertainment professionals</p>
+                    </div>
+                    <div>
+                        <a href="/IMDBPro/pro.html" style="color: white;">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <div id="movies"></div>
+
+        <div class="page-navigate">
+            <button id="prev-page">Prev</button>
+            <button id="next-page">Next</button>
+        </div>
+
+
+    </section>
+    <footer class="footer">
+        <div class="footer-buttons">
+            <a href="/Sign/sign.html" class="sign-in-button">Sign In for More Access</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="foot-content">
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Site Index</a></li>
+                <li><a href="#">IMDbPro</a></li>
+                <li><a href="#">Box Office Mojo</a></li>
+                <li><a href="#">IMDb Developer</a></li><br>
+                <li><a href="#">Press Room</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Conditions of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Your Ads Privacy Choices</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>

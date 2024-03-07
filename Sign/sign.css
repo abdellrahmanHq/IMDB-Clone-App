@@ -1,0 +1,407 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: white;
+        font-family: 'Didact Gothic', sans-serif;
+        position: relative;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .imdb-logo img {
+        width: 75px;
+        height: 35px;
+    }
+    
+    .nav-menu {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: black;
+    }
+    
+    .logo-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 15%;
+        min-width: 170px;
+        font-size: 1rem;
+        font-weight: 800;
+        color: white;
+        box-sizing: border-box;
+    }
+    
+    .menu-bar {
+        cursor: pointer;
+    }
+    
+    .logs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
+        min-width: 260px;
+        font-size: .8rem;
+        color: white;
+    }
+    
+    .logs h3 a {
+        color: white;
+    }
+    
+    .search-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        position: relative;
+    }
+    
+    .search-box input {
+        width: 100%;
+        height: 30px;
+        padding-left: 20px;
+        border-radius: 6px;
+        min-width: 200px;
+        border: none;
+        font-size: 1rem;
+    }
+    
+    #search-icon {
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+    }
+    
+    .imdbpro {
+        cursor: pointer;
+    }
+    
+    #pro {
+        color: aqua;
+    }
+    
+    .hover:hover {
+        background-color: rgb(41, 39, 39);
+        box-sizing: border-box;
+        padding: 8px 2px;
+        border-radius: 5px;
+    }
+    
+    .pop-up {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        box-sizing: border-box;
+        background-image: linear-gradient(to bottom, #242555, #03a5db);
+        padding: 10px;
+        box-shadow: 5px 10px 10px #5a5a5ab0;
+        width: 55%;
+        min-width: 700px;
+        margin: auto;
+        border-radius: 5px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        display: none;
+        z-index: 10;
+        /* transition-duration: 2s, 1s; */
+    }
+    
+    .popup-img {
+        width: 160px;
+        height: 180px;
+    }
+    
+    .popup-img img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .pop-up-desc {
+        color: #fff;
+        font-weight: 400;
+    }
+    
+    .popup-list li {
+        line-height: 25px;
+        list-style: disc;
+        /* padding-left: 10px; */
+        font-size: 1rem;
+    }
+    
+    .popup-btn {
+        width: 50%;
+        height: 30px;
+        margin-top: 20px;
+        background-color: yellow;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .imdbpro:hover+.pop-up {
+        display: flex;
+    }
+    
+    .side-option {
+        color: white;
+        position: absolute;
+        background: #303030;
+        height: 100vh;
+        width: 300px;
+        left: -300px;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .side-option .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        text-align: right;
+        height: 50px;
+        padding: 10px;
+        margin: -1px;
+        background-color: #5c5c5c;
+    }
+    
+    .side-list li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 17px;
+        color: white;
+        font-size: 1.1rem;
+    }
+    
+    @media screen and (max-width:700px) {
+        #signin {
+            display: none;
+        }
+        .logs {
+            width: 200px;
+            min-width: 200px;
+        }
+        .pop-up {
+            width: 70vh;
+        }
+    }
+    
+    @media screen and (max-width:620px) {
+        #i-logo {
+            display: none;
+        }
+        .logo-menu {
+            min-width: 140px;
+        }
+        .logs {
+            min-width: 100px;
+        }
+        .pop-up {
+            width: 100%;
+            min-width: 600px;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        #im-pro {
+            display: none;
+        }
+        .pop-up {
+            width: 99%;
+            min-width: 450px;
+        }
+    }
+    /* Additional Styles for Vertical Line */
+    
+    .split-container {
+        display: flex;
+        height: 100vh;
+    }
+    
+    .left-section {
+        flex: 0 0 50%;
+    }
+    
+    .vertical-line {
+        border-left: 1px solid black;
+        height: 50%;
+        margin: 20px 20px;
+    }
+    
+    .right-section {
+        flex: 0 0 50%;
+        padding: 20px;
+    }
+    /* Additional Styles for Sign In Section */
+    
+    .sign-in-options {
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .sign-in-options h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .sign-in-button,
+    .create-account-button {
+        background-color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+        width: 250px;
+        color: black;
+        padding: 10px 20px;
+        border: .5px solid black;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .sign-in-button i {
+        margin-right: 10px;
+    }
+    /* .sign-in-button:hover,
+    .create-account-button:hover {
+        background-color: #005ea6;
+    }
+     */
+    
+    .create-account {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .create-account-button {
+        background-color: rgb(255, 196, 0);
+    }
+    
+    .sign-in-terms {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    .right-section {
+        flex: 0 0 50%;
+        padding: 20px;
+    }
+    
+    .right-section h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+    .right-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .right-section li {
+        margin-bottom: 10px;
+    }
+    
+    .right-section strong {
+        font-weight: bold;
+        font-size: 1.2rem;
+        /* Adjust the color as needed */
+    }
+    
+    .right-section p {
+        font-size: 20px;
+    }
+    /* Footer Styles */
+    
+    .footer {
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .sign-button {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgba(128, 128, 128, 0.336);
+        font-weight: 900;
+        /* Change to your preferred button color */
+        color: rgb(0, 80, 150);
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .sign-button:hover {
+        background-color: black;
+        /* Change to your preferred hover color */
+    }
+    
+    .social-icons {
+        font-size: 24px;
+    }
+    
+    .social-icons a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    
+    .social-icons a:hover {
+        color: yellow;
+        /* Change to your preferred hover color */
+    }
+    
+    .foot-content {
+        margin-top: 20px;
+    }
+    
+    .foot-content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .foot-content li {
+        display: inline-flex;
+        padding: 15px;
+        margin-right: 15px;
+    }
+    
+    .foot-content a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .foot-content a:hover {
+        color: yellow;
+        text-decoration: underline;
+        /* Change to your preferred hover color */
+    }
